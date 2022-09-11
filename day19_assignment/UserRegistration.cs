@@ -22,4 +22,27 @@
                 Console.ResetColor();
             }
         }
+
+    public void LastName()
+    {
+        Console.WriteLine("Please Enter Last Name :");
+        string data = Console.ReadLine();
+
+        string pattern = "^[A-Z][a-z]{2,12}$";
+
+        Regex regobj = new Regex(pattern);
+
+        if (regobj.IsMatch(data))
+        {
+           
+            Console.WriteLine("Last Name is Valid");
+            Console.ResetColor();
+        }
+        else
+        {
+            
+            Console.WriteLine("Last Name is Invalid");
+            Console.ResetColor();
+        }
     }
+}

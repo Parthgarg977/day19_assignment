@@ -11,6 +11,11 @@ Console.WriteLine("Select Options Please :\n" +"1-Enter First Name\n");
                     UserRegistration user = new UserRegistration();
                     user.FirstName();
                     break;
+                case 2:
+
+                    UserRegistration user1 = new UserRegistration();
+                    user1.LastName();
+                    break;
 
                 default:
                     Console.WriteLine("Choose Proper options");
